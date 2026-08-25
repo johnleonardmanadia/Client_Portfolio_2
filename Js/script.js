@@ -225,3 +225,114 @@ testimonialCard.addEventListener('mouseleave', () => startAutoSlide());
 
 // Run Initialization when DOM is Ready
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dito mo ilalagay ang lahat ng YouTube Video Data mo
+const videoData = [
+  // UGC AI Videos (Vertical 9:16)
+  {
+    title: "AI Product Review Avatar",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "ugc-ai",
+    isVertical: true
+  },
+  {
+    title: "AI Voiceover UGC Ad",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "ugc-ai",
+    isVertical: true
+  },
+
+  // SHORT FORM VIDEOS (Vertical 9:16)
+  {
+    title: "TikTok E-commerce Reel",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "short-form",
+    isVertical: true
+  },
+  {
+    title: "Instagram Shorts Edit",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "short-form",
+    isVertical: true
+  },
+
+  // LONG FORM VIDEOS (Horizontal 16:9)
+  {
+    title: "Corporate Brand Story Document",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "long-form",
+    isVertical: false
+  },
+  {
+    title: "Full YouTube Masterclass VSL",
+    youtubeId: "dQw4w9WgXcQ",
+    category: "long-form",
+    isVertical: false
+  }
+];
+
+const videoGrid = document.getElementById('videoGrid');
+const filterBtns = document.querySelectorAll('.filter-btn');
+
+// Function para mag-generate ng Dynamic HTML para sa Videos
+function renderVideos(selectedCategory) {
+  // Lilinisin muna ang lumang videos
+  videoGrid.innerHTML = '';
+
+  // Fi-filter lang ang mga videos na nababagay sa napiling category
+  const filteredVideos = videoData.filter(video => video.category === selectedCategory);
+
+  filteredVideos.forEach(video => {
+    const card = document.createElement('div');
+    card.className = `video-card ${video.isVertical ? 'vertical' : ''}`;
+    
+    card.innerHTML = `
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/${video.youtubeId}" 
+          title="${video.title}" 
+          loading="lazy" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-info">
+        <h3>${video.title}</h3>
+      </div>
+    `;
+
+    videoGrid.appendChild(card);
+  });
+}
+
+// Click events para sa Filter Buttons
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const category = btn.getAttribute('data-category');
+    renderVideos(category);
+  });
+});
+
+// Load default category (UGC AI) sa simula
+renderVideos('ugc-ai');
