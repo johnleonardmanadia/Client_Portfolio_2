@@ -4,7 +4,7 @@
   --bg: #0a0a0a;
   --ink: #f5f3ef;
   --muted: #c7c3bc;
-  --gold: #ffc84a;
+
   --blue: #2f8fe8;
   --line: rgba(245, 243, 239, 0.18);
 }
@@ -693,7 +693,7 @@ padding-top: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  width: 100%;
+  width: 70%;
   max-width: 1200px;
 }
 
@@ -721,7 +721,8 @@ padding-top: 120px;
 
 /* 9:16 Vertical Ratio (Shorts / Reels / UGC) */
 .video-card.vertical .video-container {
-  padding-top: 177.77%;
+padding-top: 100%;
+ /* padding-top: 177.77%; */
 }
 
 .video-container iframe {

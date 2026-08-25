@@ -278,7 +278,7 @@ const videoData = [
   // LONG FORM VIDEOS (Horizontal 16:9)
   {
     title: "Corporate Brand Story Document",
-    youtubeId: "dQw4w9WgXcQ",
+    youtubeId: "WChZ_sXs3h0",
     category: "long-form",
     isVertical: false
   },
