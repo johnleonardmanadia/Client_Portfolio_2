@@ -245,7 +245,7 @@ nav {
 /* headline */
 .headline {
   font-family: "Archivo Black", sans-serif;
-  font-size: clamp(30px, 6vw, 60px);
+  font-size: clamp(30px, 6vw, 62px);
   line-height: 1.08;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ nav {
 
 /* Base Styles & CSS Variables */
 :root {
-  --bg-color: #0d0f12;
+  --bg-color: #2578c9;
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
   --accent-color: #4fa3ed;
@@ -412,9 +412,13 @@ nav {
 .testimonials-section {
   width: 100%;
   padding: 80px 20px;
+
+padding-top: 120px;
+
 }
 
-.container {
+.container-testimony {
+
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
