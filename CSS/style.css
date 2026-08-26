@@ -428,10 +428,10 @@ nav.links a.navlink:hover::after {
     --text-muted: #94a3b8;
     --pill-bg: #12151f;
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
 
 
-  
+
+
   .header{
     text-align:center;
     margin-bottom: 40px;
