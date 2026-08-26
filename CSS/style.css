@@ -652,10 +652,18 @@ nav.links a.navlink:hover::after {
       width: 100%;
     }
 
+
+    .container h1 {
+      font-size: 3rem;
+    }
+
     .description-text {
       color: #ffffff;
       margin-bottom: 25px;
       font-size: 1.1rem;
+  max-width: 800px;
+
+
     }
 
     .wrapper {
