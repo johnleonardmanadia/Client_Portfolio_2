@@ -635,6 +635,161 @@ nav.links a.navlink:hover::after {
 
 
 
+
+
+/* ===== CONTACT ===== */
+    .contact-section {
+      background-color: #3b99e7;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .description-text {
+      color: #ffffff;
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    .wrapper {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Left Side: Social Media Cards */
+    .social-column {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .social-card {
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .social-card:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .social-card i {
+      font-size: 1.8rem;
+    }
+
+    .social-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.8;
+      margin-bottom: 2px;
+    }
+
+    .social-value {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    /* Right Side: White Contact Form */
+    .form-column {
+      flex: 1.2;
+      min-width: 320px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 35px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #3b99e7;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .submit-btn:hover {
+      background-color: #00acc1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===== FOOTER CTA ===== */
 
 
