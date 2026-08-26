@@ -1,171 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOUR BRAND — Video Marketing That Works</title>
+<link rel="stylesheet" href="CSS/style.css">
+
 </head>
+<body>
 
-<section class="hero">
-  <div class="bg-video" id="bgVideoWrap">
-    <video id="bgVideo" autoplay muted loop playsinline>
-      <source src="assets/video/Download (1).mp4" type="video/mp4">
-    </video>
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">
+      <div class="logo-icon">J</div>
+      <div class="logo-text">JOHN<span>EDITS</span></div>
+    </div>
+    <nav class="links" id="navLinks">
+      <a class="navlink" href="#home">Home</a>
+      <a class="navlink" href="#work">Our Work</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#reviews">Reviews</a>
+      <a class="btn" href="#contact">Start a project</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </div>
-  <div class="scrim"></div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
 
-  <nav>
-    <div class="logo-group">
-      <div class="logo">R</div>
-      <span class="logo-name">Ragenous</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#branding">Brand</a></li>
-      <li><a href="#works">Work</a></li>
-      <li><a href="#testimonials">Testimonial</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="nav-cta">Let's Talk</button>
-      <button class="burger" id="burgerBtn" aria-label="menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#">Home</a>
-    <a href="#branding">Brand</a>
-    <a href="#works">Work</a>
-    <a href="#testimonials">Testimonial</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <h1 class="headline" id="typedHeadline"><span class="cursor"></span></h1>
-
-  <p class="subtext">Transforming ideas into captivating visuals. I help creators and businesses bring their content to life with dynamic, story-driven edits.</p>
-
-  <a href="#testimonials" class="cta-main">Start a project</a>
-
-  <div class="social-proof">
-    <div class="avatars">
-      <span style="background-image:url('https://i.pravatar.cc/72?img=12')"></span>
-      <span style="background-image:url('https://i.pravatar.cc/72?img=33')"></span>
-      <span style="background-image:url('https://i.pravatar.cc/72?img=5')"></span>
-      <span style="background-image:url('https://i.pravatar.cc/72?img=47')"></span>
-      <span style="background-image:url('https://i.pravatar.cc/72?img=15')"></span>
-    </div>
-    <div class="reviews-row">
-      <span class="stars">★★★★★</span>
-      <a href="#testimonials" class="reviews-link">See Reviews</a>
-      <a href="#testimonials" class="reviews-arrow" aria-label="See reviews">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
-      </a>
+<!-- ========== HERO (put your video here) ========== -->
+<section class="hero" id="home">
+  <!-- Replace the src below with your own video file, e.g. src="my-video.mp4" -->
+  <video class="video-fallback" autoplay muted loop playsinline poster="">
+    <source src="assets/video/Download (1).mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1><span id="typedHeadline"></span><span class="type-cursor">|</span></h1>
+    <p class="sub">I help brands and creators turn raw footage into scroll-stopping edits that build trust and get results.</p>
+    <a class="btn" href="#contact">Start a project</a>
+    <div class="social-proof">
+      <div class="avatars">
+        <div class="av"><img src="https://i.pravatar.cc/80?img=12" alt=""></div>
+        <div class="av"><img src="https://i.pravatar.cc/80?img=5" alt=""></div>
+        <div class="av"><img src="https://i.pravatar.cc/80?img=32" alt=""></div>
+        <div class="av"><img src="https://i.pravatar.cc/80?img=47" alt=""></div>
+        <div class="av"><img src="https://i.pravatar.cc/80?img=25" alt=""></div>
+      </div>
+      <div class="stars">★★★★★</div>
+      <a class="reviews-link" href="#reviews">See Our Reviews</a>
+      <a class="arrow-btn" href="#reviews">›</a>
     </div>
   </div>
-
-  <div class="eyebrow">BE PART OF RAGENOUS</div>
+  <div class="curve-cover"></div>
 </section>
 
+<!-- ========== LOGO WALL ========== -->
+<section class="logos-section" id="about">
+  <div class="logos-grid">
+    <div class="logo-item">Client<small>ONE</small></div>
+    <div class="logo-item">Client<small>TWO</small></div>
+    <div class="logo-item">Client<small>THREE</small></div>
+    <div class="logo-item">Client<small>FOUR</small></div>
+    <div class="logo-item">Client<small>FIVE</small></div>
+    <div class="logo-item">Client<small>SIX</small></div>
+    <div class="logo-item">Client<small>SEVEN</small></div>
+    <div class="logo-item">Client<small>EIGHT</small></div>
+    <div class="logo-item">Client<small>NINE</small></div>
+    <div class="logo-item">Client<small>TEN</small></div>
+  </div>
+</section>
 
-
-
-
-
-
-
-
-
-<section class="work-section" id="works">
-    <h2>Our Work</h2>
-    <p class="subtitle">Watch some of our video work below.</p>
-
-    <!-- 3 Filter Buttons -->
-    <div class="filter-container">
-      
-      <button class="filter-btn" data-category="short-form">SHORT FORM VIDEO</button>
-
-      <button class="filter-btn active" data-category="ugc-ai">UGC AI</button>
-
-      <button class="filter-btn" data-category="long-form">LONG FORM VIDEO</button>
+<!-- ========== OUR WORK ========== -->
+<section class="work-section" id="work">
+  <h2>Our Work</h2>
+  <p class="lead">Watch some of my edited work below.</p>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="play">▶</div>
+      <div class="tag">Brand Story +<br>Corporate Edits</div>
     </div>
+    <div class="work-card">
+      <div class="play">▶</div>
+      <div class="tag">Social Media<br>Reels &amp; Shorts</div>
+    </div>
+  </div>
+</section>
 
-    <!-- Container kung saan i-re-render ng JS ang mga videos -->
-    <div class="video-grid" id="videoGrid"></div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="testimonials-section" id="testimonials">
-    <div class="container-testimony">
-      <h2 class="section-title">Client Feedback</h2>
-      <p class="section-subtitle">What people say about working with me</p>
-
-      <!-- Carousel Wrapper -->
-      <div class="carousel-container">
-        
-        <!-- Card Container -->
-        <div class="testimonial-card" id="testimonialCard">
-          
-          <!-- Review Content -->
-          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-          <p class="testimonial-text" id="testimonialText">Loading testimonial...</p>
-          
-          <!-- Rating Stars -->
-          <div class="star-rating" id="starRating">
-            <!-- Stars rendered via JS -->
+<!-- ========== TESTIMONIALS ========== -->
+<section class="testimonial-section" id="reviews">
+  <div class="wrap">
+    <div class="featured-video">Before & After<br>Edit Breakdown</div>
+    <a class="btn btn-white" href="#">Watch Now</a>
+    <div class="eyebrow-line"></div>
+    <h2>What Clients Are Saying</h2>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-head">
+          <div class="t-avatar"><img src="https://i.pravatar.cc/80?img=45" alt=""></div>
+          <div>
+            <div class="t-name">Client Name, DDS</div>
+            <div class="t-role">Partner, Client Business</div>
           </div>
-
-          <!-- Client Profile Details -->
-          <div class="client-profile">
-            <img src="" alt="Client Profile" class="client-img" id="clientImg">
-            <h3 class="client-name" id="clientName">Client Name</h3>
-            <span class="client-role" id="clientRole">Client Role</span>
-          </div>
-
         </div>
-
-        <!-- Navigation Controls -->
-        <div class="carousel-nav">
-          <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Testimonial">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span>Previous</span>
-          </button>
-          
-          <div class="dots-container" id="dotsContainer">
-            <!-- Pagination dots rendered via JS -->
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">In just two months, we saw a strong return on ad spend — and the quality of the content is anything but generic. It really reflects the premium brand we represent.</p>
+        <div class="t-date">Feb 17, 2026</div>
+      </div>
+      <div class="t-card">
+        <div class="t-head">
+          <div class="t-avatar"><img src="https://i.pravatar.cc/80?img=13" alt=""></div>
+          <div>
+            <div class="t-name">Client Name</div>
+            <div class="t-role">Co-Team Lead, Their Company</div>
           </div>
-
-          <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Testimonial">
-            <span>Next</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
         </div>
-
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">I knew I needed to step up my video content, but couldn't do it alone. This team has produced great videos for us for years and brought in many new clients.</p>
+        <div class="t-date">May 19, 2024</div>
+      </div>
+      <div class="t-card">
+        <div class="t-head">
+          <div class="t-avatar"><img src="https://i.pravatar.cc/80?img=31" alt=""></div>
+          <div>
+            <div class="t-name">Client Name</div>
+            <div class="t-role">Marketing / PR, Their Company</div>
+          </div>
+        </div>
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">Communication, reliability, and willingness to go above and beyond were truly commendable — attention to detail and understanding our vision were impressive.</p>
+        <div class="t-date">Jan 23, 2024</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- ========== STRATEGY SPLIT ========== -->
+<section class="strategy-section" id="contact">
+  <div class="strategy-grid">
+    <div>
+      <h2>Raw footage in, <span class="accent">scroll-stopping edits out.</span></h2>
+      <p>I focus on <b>story-first editing</b> by understanding your brand's goals, then building a <b>custom edit style</b> that fits your content.</p>
+      <p>From <b>color grading</b> and <b>sound design</b> to <b>pacing and captions</b>, every edit is built to hold attention and drive results.</p>
+      <a class="btn" href="#" style="margin-top:10px;">Start a project</a>
+    </div>
+    <div class="strategy-img">Studio / behind-the-scenes photo goes here</div>
+  </div>
+</section>
 
+<div class="final-cta">
+  <h3>Ready to grow your brand with video?</h3>
+  <a class="btn btn-white" href="#">Start a project</a>
+</div>
 
-
-
-
- 
-
-<script src="Js/script.js"></script>
-
+<footer>
+  © 2026 John Edits. All rights reserved.
+</footer>
 </body>
+<script src="Js/script.js">
+
+</script>
 </html>
