@@ -468,6 +468,15 @@ nav.links a.navlink:hover::after {
 
 
 
+
+
+
+
+
+
+
+
+
 /* ===== TESTIMONIALS ===== */
 .testimonial-section {
   background: linear-gradient(180deg, #163a5c 0%, #2c6faf 55%, #3e9cf5 100%);
@@ -482,6 +491,12 @@ nav.links a.navlink:hover::after {
   font-weight: 800;
   margin-bottom: 44px;
 }
+
+
+
+
+
+
 
 /* Wrapper para sa carousel buttons */
 .t-carousel-wrapper {
