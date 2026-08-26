@@ -83,3 +83,72 @@
       }
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Work
+
+ // Tab switching
+  document.querySelectorAll('.tab').forEach(tab=>{
+    tab.addEventListener('click', ()=>{
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-'+tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Build each card's placeholder content
+  document.querySelectorAll('.card').forEach(card=>{
+    const videoId = card.dataset.video;
+
+    const inner = document.createElement('div');
+    inner.className = 'card-inner';
+    inner.innerHTML = `
+      <div class="label-row">
+        <div class="icon-circle">!</div>
+        <div class="label-text">
+          <a href="#" onclick="return false;">Watch video on YouTube</a>
+          <div class="err">Click to play</div>
+        </div>
+      </div>
+    `;
+    card.appendChild(inner);
+
+    const playBtn = document.createElement('div');
+    playBtn.className = 'play-btn';
+    playBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>`;
+    card.appendChild(playBtn);
+
+    const ytCorner = document.createElement('div');
+    ytCorner.className = 'yt-corner';
+    ytCorner.innerHTML = `<svg viewBox="0 0 28 20" fill="white"><path d="M27.4 3.1c-.3-1.2-1.3-2.1-2.5-2.4C22.7 0 14 0 14 0S5.3 0 3.1.7C1.9 1 1 1.9.6 3.1 0 5.3 0 10 0 10s0 4.7.6 6.9c.3 1.2 1.3 2.1 2.5 2.4C5.3 20 14 20 14 20s8.7 0 10.9-.7c1.2-.3 2.1-1.3 2.5-2.4.6-2.2.6-6.9.6-6.9s0-4.7-.6-6.9zM11.2 14.3V5.7L18.5 10l-7.3 4.3z"/></svg>`;
+    card.appendChild(ytCorner);
+
+    card.addEventListener('click', ()=>{
+      const origin = encodeURIComponent(window.location.origin || window.location.href);
+      const embedUrl = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=${origin}`;
+      card.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+

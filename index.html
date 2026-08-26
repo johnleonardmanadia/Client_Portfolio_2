@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YOUR BRAND — Video Marketing That Works</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="CSS/style.css">
 
 </head>
@@ -66,16 +67,41 @@
 <section class="work-section" id="work">
   <h2>Our Work</h2>
   <p class="lead">Watch some of my edited work below.</p>
-  <div class="work-grid">
-    <div class="work-card">
-      <div class="play">▶</div>
-      <div class="tag">Brand Story +<br>Corporate Edits</div>
-    </div>
-    <div class="work-card">
-      <div class="play">▶</div>
-      <div class="tag">Social Media<br>Reels &amp; Shorts</div>
+
+
+   <div class="tabs">
+    <button class="tab active" data-tab="short">SHORT FORM VIDEO</button>
+    <button class="tab" data-tab="ugc">UGC AI</button>
+    <button class="tab" data-tab="long">LONG FORM VIDEO</button>
+  </div>
+
+  <div class="panel active" id="panel-short">
+    <div class="grid portrait" data-orientation="portrait">
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="M7lc1UVf-VE"></div>
     </div>
   </div>
+
+  <div class="panel" id="panel-ugc">
+    <div class="grid portrait" data-orientation="portrait">
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-long">
+    <div class="grid landscape" data-orientation="landscape">
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="M7lc1UVf-VE"></div>
+      <div class="card" data-video="kgAmVArPUQ4"></div>
+    </div>
+  </div>
+
+
+
+
 </section>
 
 
@@ -86,9 +112,9 @@
 <section class="testimonial-section" id="reviews">
   <div class="wrap">
 
-    <div class="testimon">
+ 
       <h1>WHAT PEOPLE SAY</h1>
-    </div>
+  
  
     <div class="t-carousel-wrapper">
       <button class="t-nav t-prev" id="tPrev" aria-label="Previous">❮</button>
