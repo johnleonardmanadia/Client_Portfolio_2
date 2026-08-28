@@ -503,25 +503,48 @@ nav.links a.navlink:hover::after {
   .card:hover{ transform: translateY(-3px); }
   .grid.portrait .card{ aspect-ratio: 9/16; }
 
+  .grid-wrapper{ position: relative; }
+  .grid-nav{
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #163a5c;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-prev{ left: 4px; }
+  .grid-next{ right: 4px; }
+
   @media (max-width: 768px){
+    .grid-nav{ display: flex; }
     .grid{
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
-      gap: 16px;
-      padding: 4px 20px 10px;
-      margin: 0 -20px;
+      gap: 0;
+      padding: 0;
+      margin: 0;
       max-width: 100%;
     }
     .grid::-webkit-scrollbar{ display:none; }
     .grid.landscape .card{
-      flex: 0 0 85%;
+      flex: 0 0 100%;
       scroll-snap-align: center;
     }
     .grid.portrait .card{
-      flex: 0 0 70%;
+      flex: 0 0 100%;
       scroll-snap-align: center;
     }
   }

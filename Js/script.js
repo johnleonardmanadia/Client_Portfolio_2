@@ -96,6 +96,20 @@ const menuToggle = document.getElementById('menuToggle');
 
 
 
+  // Our Work slider arrows (mobile)
+  document.querySelectorAll('.grid-wrapper').forEach(wrapper=>{
+    const g = wrapper.querySelector('.grid');
+    const prev = wrapper.querySelector('.grid-prev');
+    const next = wrapper.querySelector('.grid-next');
+    const scrollByCard = (dir) => {
+      const card = g.querySelector('.card');
+      if(!card) return;
+      g.scrollBy({ left: dir * card.offsetWidth, behavior: 'smooth' });
+    };
+    prev.addEventListener('click', () => scrollByCard(-1));
+    next.addEventListener('click', () => scrollByCard(1));
+  });
+
 // Work
 
  // Tab switching
@@ -140,7 +154,6 @@ const menuToggle = document.getElementById('menuToggle');
       card.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
     });
   });
-
 
 
 
