@@ -85,7 +85,7 @@ header.nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 110;
   background: rgba(15, 18, 22, 0.45);
   backdrop-filter: blur(16px) saturate(160%);
   -webkit-backdrop-filter: blur(16px) saturate(160%);
@@ -412,7 +412,7 @@ nav.links a.navlink:hover::after {
   color: var(--blue);
   font-weight: 600;
   margin-bottom: 50px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 
@@ -620,7 +620,14 @@ nav.links a.navlink:hover::after {
 .testimonial-section h1 {
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 800;
+  margin-bottom: 10px;
+}
+.testimonial-section .t-lead {
+  color: #ffffff;
+  opacity: 0.85;
+  font-weight: 600;
   margin-bottom: 44px;
+  font-size: 20px;
 }
 
 
@@ -800,7 +807,7 @@ nav.links a.navlink:hover::after {
 
 
     .container h1 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     .description-text {
@@ -816,6 +823,29 @@ nav.links a.navlink:hover::after {
       display: flex;
       gap: 30px;
       flex-wrap: wrap;
+    }
+
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .availability-badge .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: #4ade80;
+      box-shadow: 0 0 8px #4ade80;
+      flex-shrink: 0;
     }
 
     /* Left Side: Social Media Cards */
@@ -874,6 +904,19 @@ nav.links a.navlink:hover::after {
       border-radius: 8px;
       padding: 35px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-title {
+      color: #1a2430;
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .form-subtitle {
+      color: #6b7785;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
     }
 
     .form-group {

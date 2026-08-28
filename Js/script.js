@@ -112,8 +112,17 @@ const menuToggle = document.getElementById('menuToggle');
   document.querySelectorAll('.card').forEach(card=>{
     const videoId = card.dataset.video;
 
-    // Show the YouTube thumbnail as the card's background image
-    card.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
+    // Auto thumbnail from YouTube (falls back to sddefault if hqdefault missing)
+    const thumb = new Image();
+    thumb.onload = () => {
+      // hqdefault always exists but can be a 120x90 gray placeholder for some IDs;
+      // maxresdefault gives the sharpest image when available.
+      card.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/maxresdefault.jpg)`;
+    };
+    thumb.onerror = () => {
+      card.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
+    };
+    thumb.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
     const playBtn = document.createElement('div');
     playBtn.className = 'play-btn';
