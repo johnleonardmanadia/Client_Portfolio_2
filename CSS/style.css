@@ -491,6 +491,8 @@ nav.links a.navlink:hover::after {
   .card{
     position: relative;
     background: var(--card-bg);
+    background-size: cover;
+    background-position: center;
     border-radius: 16px;
     overflow: hidden;
     aspect-ratio: 16/9;
@@ -515,7 +517,8 @@ nav.links a.navlink:hover::after {
     justify-content:flex-start;
     padding: 20px;
     background:
-      radial-gradient(circle at 30% 50%, rgba(59,130,246,0.06), transparent 60%);
+      radial-gradient(circle at 30% 50%, rgba(59,130,246,0.06), transparent 60%),
+      linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.65) 100%);
   }
   .grid.portrait .card-inner{
     justify-content: flex-end;
@@ -559,7 +562,7 @@ nav.links a.navlink:hover::after {
   }
   .play-btn{
     position:absolute;
-    top: 55%; left: 78%;
+    top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     width: 60px; height: 60px;
     border-radius: 50%;
@@ -569,9 +572,6 @@ nav.links a.navlink:hover::after {
     justify-content:center;
     box-shadow: 0 6px 20px rgba(59,130,246,0.5);
     transition: transform .2s ease, background .2s ease;
-  }
-  .grid.portrait .play-btn{
-    top: 42%; left: 50%;
   }
   .card:hover .play-btn{
     transform: translate(-50%,-50%) scale(1.08);

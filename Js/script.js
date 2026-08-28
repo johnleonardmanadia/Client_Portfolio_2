@@ -1,4 +1,4 @@
- const menuToggle = document.getElementById('menuToggle');
+const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   const navOverlay = document.getElementById('navOverlay');
 
@@ -112,18 +112,8 @@
   document.querySelectorAll('.card').forEach(card=>{
     const videoId = card.dataset.video;
 
-    const inner = document.createElement('div');
-    inner.className = 'card-inner';
-    inner.innerHTML = `
-      <div class="label-row">
-        <div class="icon-circle">!</div>
-        <div class="label-text">
-          <a href="#" onclick="return false;">Watch video on YouTube</a>
-          <div class="err">Click to play</div>
-        </div>
-      </div>
-    `;
-    card.appendChild(inner);
+    // Show the YouTube thumbnail as the card's background image
+    card.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
 
     const playBtn = document.createElement('div');
     playBtn.className = 'play-btn';
@@ -141,7 +131,6 @@
       card.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
     });
   });
-
 
 
 
