@@ -191,18 +191,19 @@ const menuToggle = document.getElementById('menuToggle');
 // Kunin mo lang yung VIDEO_ID (yung parte pagkatapos ng /embed/) at ilagay dito sa baba.
 const videos = {
     ugcAi: [
-        "iPW0nMKxRso",
-        "mt-uMsler5Q",
-        "pnlhthCGDbo",
-        "kgAmVArPUQ4",
-        "YrnBrHmedYs",
-        "eZBNjDCNlw4",
-        "SW9V44x4gEM"
+        "",
+
     ],
     shortForm: [
-        "JdInT8Q5Vw4",
-        "Cw90YgvH8ic",
-        "hzLQOzxS0g0"
+        "zqvbF4hOmCI",
+        "_OlUGoIxh4s",
+        "ZBmcAjZslx0",
+        "Q9qcAbtq3x8",
+        "eaJRIG_yJn0",
+        "xifPyMzbZfA",
+        "t9g6L699CeQ",
+        "KZMasOaJeuE",
+        "wHtStTCpw5g"
     ],
     longForm: [
         "Lu--_TtYKqo",
