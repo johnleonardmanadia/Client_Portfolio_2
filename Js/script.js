@@ -21,18 +21,10 @@ const menuToggle = document.getElementById('menuToggle');
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   window.addEventListener('resize', () => { if(window.innerWidth > 900) closeMenu(); });
 
-  // Typing headline effect
+  // Headline (static, no typing animation)
   const headlineEl = document.getElementById('typedHeadline');
-  const headlineText = "LET'S MAKE YOUR CONTENT UNFORGETTABLE";
-  let charIndex = 0;
-  function typeHeadline(){
-    if(charIndex <= headlineText.length){
-      headlineEl.textContent = headlineText.slice(0, charIndex);
-      charIndex++;
-      setTimeout(typeHeadline, 45);
-    }
-  }
-  typeHeadline();
+  const headlineText = "Scalable Video Editing for Brands Ready to Dominate the Feed";
+  headlineEl.textContent = headlineText;
 
 
 
@@ -154,12 +146,3 @@ const menuToggle = document.getElementById('menuToggle');
       card.innerHTML = `<iframe src="${embedUrl}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
     });
   });
-
-
-
-
-
-
-
-
-

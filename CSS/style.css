@@ -1,3 +1,5 @@
+
+
 :root {
   --blue: #3e9cf5;
   --blue-dark: #2c7fd6;
@@ -279,6 +281,7 @@ nav.links a.navlink:hover::after {
   max-width: 900px;
 }
 .hero h1 {
+  font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
   font-size: clamp(38px, 6vw, 74px);
   font-weight: 800;
   line-height: 1.05;
@@ -303,8 +306,9 @@ nav.links a.navlink:hover::after {
   }
 }
 .hero p.sub {
+  font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
   font-size: clamp(15px, 2vw, 19px);
-  color: var(--muted);
+  color: #ffffff;
   max-width: 640px;
   margin: 0 auto 34px;
   font-weight: 500;
@@ -366,17 +370,15 @@ nav.links a.navlink:hover::after {
   font-size: 14px;
 }
 
-/* curved bottom of hero into black section */
+/* bend at bottom of hero into black section, traced from reference */
 .curve-cover {
   position: absolute;
   bottom: -1px;
   left: 0;
-  right: 0;
-  height: 70px;
+  width: 100%;
+  height: 180px;
   z-index: 3;
-  background: var(--ink);
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  transform: scaleX(1.4);
+  display: block;
 }
 
 
