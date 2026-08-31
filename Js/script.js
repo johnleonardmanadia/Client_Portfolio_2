@@ -358,3 +358,20 @@ if (photoStack) {
         }
     });
 }
+
+
+// ===== SCROLL REVEAL =====
+// Section headings/text fade + slide in (like the hero sub text) once they enter view.
+const revealEls = document.querySelectorAll('.reveal-left');
+if (revealEls.length) {
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+}

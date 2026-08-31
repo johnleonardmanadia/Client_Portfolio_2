@@ -315,6 +315,7 @@ nav.links a.navlink:hover::after {
   margin-bottom: 22px;
   letter-spacing: -1px;
   min-height: 1.15em;
+  animation: dropIn 0.9s ease 0.1s both;
 }
 .type-cursor {
   display: inline-block;
@@ -332,6 +333,57 @@ nav.links a.navlink:hover::after {
     opacity: 0;
   }
 }
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== SCROLL REVEAL (same slide-in-left feel as hero sub text) ===== */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
 .hero p.sub {
   font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
   font-size: clamp(15px, 2vw, 19px);
@@ -339,12 +391,14 @@ nav.links a.navlink:hover::after {
   max-width: 640px;
   margin: 0 auto 34px;
   font-weight: 500;
+  animation: slideInLeft 0.9s ease 0.35s both;
 }
 .hero .btn {
   font-size: 16px;
   padding: 16px 60px;
   margin-bottom: 34px;
   border-radius: 20px;
+  animation: slideInRight 0.9s ease 0.6s both;
 }
 .social-proof {
   display: flex;
@@ -352,6 +406,7 @@ nav.links a.navlink:hover::after {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+  animation: riseIn 0.9s ease 0.85s both;
 }
 .avatars {
   display: flex;
@@ -705,8 +760,8 @@ nav.links a.navlink:hover::after {
   gap: 60px;
 }
 .strategy-text h1 {
-  font-size: clamp(22px, 3.2vw, 32px);
- /* font-size: clamp(28px, 3.6vw, 40px);  */
+  font-size: clamp(22px, 3.2vw, 35px);
+/*  font-size: clamp(28px, 3.6vw, 40px);   */
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 26px;
@@ -1587,3 +1642,5 @@ footer {
     color: #ff9900;
   }
 }
+
+
