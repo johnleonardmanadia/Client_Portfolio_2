@@ -46,7 +46,7 @@ a {
   background: var(--blue);
   color: #fff;
   font-weight: 700;
-  padding: 14px 30px;
+  padding: 8px 22px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
@@ -111,9 +111,9 @@ header.nav {
   letter-spacing: 6px;
 }
 .logo-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+
  /* background: linear-gradient(135deg, var(--blue), var(--blue-dark)); */
   display: flex;
   align-items: center;
@@ -146,7 +146,7 @@ nav.links {
   gap: 36px;
 }
 nav.links a.navlink {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -1101,6 +1101,7 @@ footer {
 .featured-works {
     width: 100%;
     padding: 20px 0 80px;
+    background: linear-gradient(180deg, var(--ink) 0%, var(--ink) 75%, #163a5c 100%);
 
 }
 
