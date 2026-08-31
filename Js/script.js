@@ -206,10 +206,10 @@ const videos = {
         "wHtStTCpw5g"
     ],
     longForm: [
-        "Lu--_TtYKqo",
-        "S9yjYAWUxhw",
-        "w5dyE6VOwgA",
-        "v13fXBnZ8U4"
+        "Vb2bHw17mw8",
+        "yDylGKCnu84",
+        "6i_xGgPaRSM",
+        "1TrQQXeRcX8"
     ]
 };
 
@@ -274,6 +274,9 @@ function updateVideoSources() {
 
     const prevIndex = (currentIndex - 1 + total) % total;
     const nextIndex = (currentIndex + 1) % total;
+
+    // Long form video = 16:9 landscape cards; others stay 9:16 portrait
+    document.getElementById('carouselContainer').classList.toggle('landscape', currentCategory === 'longForm');
 
     // Set Main Video (thumbnail muna, hindi agad naglalaro)
     resetMainCardToThumb(list[currentIndex]);

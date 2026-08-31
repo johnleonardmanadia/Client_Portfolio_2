@@ -124,6 +124,13 @@ header.nav {
   letter-spacing: 0;
   color: #fff;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
 }
 .logo-text span {
   display: block;
@@ -1231,6 +1238,17 @@ footer {
         0 0 35px rgba(62, 156, 245, 0.35);
 }
 
+/* LONG FORM VIDEO = 16:9 landscape instead of 9:16 portrait */
+.carousel-container.landscape .main-card {
+    width: 480px;
+    height: 270px;
+}
+
+.carousel-container.landscape .side-card {
+    width: 320px;
+    height: 180px;
+}
+
 
 /* NAV BUTTONS */
 .nav-btn {
@@ -1341,6 +1359,13 @@ footer {
     .main-card {
         width: 270px;
         height: 480px;
+    }
+
+    .carousel-container.landscape .main-card {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     .carousel-stage {
