@@ -761,7 +761,6 @@ nav.links a.navlink:hover::after {
 }
 .strategy-text h1 {
   font-size: clamp(22px, 3.2vw, 35px);
-/*  font-size: clamp(28px, 3.6vw, 40px);   */
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 26px;
@@ -1386,6 +1385,7 @@ footer {
     overflow: hidden;
     background: #111;
     border: 1px solid var(--glass-border);
+    transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
 }
 
 .video-wrapper {
@@ -1433,6 +1433,16 @@ footer {
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.8),
         0 0 35px rgba(62, 156, 245, 0.35);
+}
+.main-card:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.85),
+        0 0 45px rgba(62, 156, 245, 0.5);
+}
+.side-card:hover {
+    transform: scale(0.92);
+    opacity: 0.6;
 }
 
 /* LONG FORM VIDEO = 16:9 landscape instead of 9:16 portrait */
