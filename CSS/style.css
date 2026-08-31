@@ -677,6 +677,12 @@ nav.links a.navlink:hover::after {
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 700;
 }
+.strategy-lead {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 12px;
+}
 .strategy-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -728,10 +734,12 @@ nav.links a.navlink:hover::after {
 
 /* ===== TESTIMONIALS ===== */
 .testimonial-section {
+  position: relative;
   background: linear-gradient(180deg, #163a5c 0%, #2c6faf 55%, #3e9cf5 100%);
-  padding: 90px 20px 100px;
+  padding: 90px 20px 280px;
   text-align: center;
   padding-top: 120px;
+  overflow: hidden;
 }
 
 
