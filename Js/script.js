@@ -345,3 +345,16 @@ categoryButtons.forEach(btn => {
 document.addEventListener('DOMContentLoaded', () => {
     updateVideoSources();
 });
+
+
+// ===== STRATEGY PHOTO STACK =====
+// Click sends the front photo to the back, revealing the next one.
+const photoStack = document.getElementById('photoStack');
+if (photoStack) {
+    photoStack.addEventListener('click', () => {
+        const firstPhoto = photoStack.querySelector('img');
+        if (firstPhoto) {
+            photoStack.appendChild(firstPhoto);
+        }
+    });
+}
