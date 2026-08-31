@@ -270,6 +270,21 @@ nav.links a.navlink:hover::after {
     ),
     linear-gradient(135deg, #1b1f24, #05070a 70%);
 }
+.yt-bg-wrap {
+  overflow: hidden;
+  pointer-events: none;
+}
+.yt-bg-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240vh;
+  min-width: 135%;
+  height: 75.94vw;
+  min-height: 135%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
 .hero::after {
   content: "";
   position: absolute;
@@ -690,7 +705,8 @@ nav.links a.navlink:hover::after {
   gap: 60px;
 }
 .strategy-text h1 {
-  font-size: clamp(28px, 3.6vw, 40px);
+  font-size: clamp(22px, 3.2vw, 32px);
+ /* font-size: clamp(28px, 3.6vw, 40px);  */
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 26px;
