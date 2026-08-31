@@ -88,10 +88,10 @@ header.nav {
   left: 0;
   right: 0;
   z-index: 110;
-  background: rgba(15, 18, 22, 0.45);
+/*  background: rgba(15, 18, 22, 0.45);
   backdrop-filter: blur(16px) saturate(160%);
   -webkit-backdrop-filter: blur(16px) saturate(160%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
   padding: 18px 0;
   transition:
     background 0.2s ease,
@@ -114,7 +114,7 @@ header.nav {
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+ /* background: linear-gradient(135deg, var(--blue), var(--blue-dark)); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,6 +287,11 @@ nav.links a.navlink:hover::after {
   z-index: 2;
   max-width: 900px;
 }
+
+
+
+
+/*Adjust heading title*/
 .hero h1 {
   font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
   font-size: clamp(38px, 6vw, 74px);
@@ -675,7 +680,7 @@ nav.links a.navlink:hover::after {
 }
 .testimonial-section h1 {
   font-size: clamp(28px, 4vw, 42px);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .testimonial-section .t-lead {
@@ -1117,7 +1122,7 @@ footer {
 }
 .featured-works .work-heading h1 {
     font-size: clamp(28px, 4vw, 42px);
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 .featured-works .work-heading p {
