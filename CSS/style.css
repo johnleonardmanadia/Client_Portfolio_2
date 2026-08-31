@@ -111,8 +111,8 @@ header.nav {
   letter-spacing: 6px;
 }
 .logo-icon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 
  /* background: linear-gradient(135deg, var(--blue), var(--blue-dark)); */
   display: flex;
@@ -663,6 +663,68 @@ nav.links a.navlink:hover::after {
 
 
 
+
+/* ===== STRATEGY ===== */
+.strategy-section {
+  background: var(--ink);
+  padding: 100px 20px;
+}
+.strategy-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.strategy-heading h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+}
+.strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+.strategy-text h1 {
+  font-size: clamp(28px, 3.6vw, 40px);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 26px;
+}
+.strategy-text h1 span {
+  color: var(--blue);
+  display: block;
+}
+.strategy-text p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+.strategy-text p strong {
+  color: #fff;
+}
+.strategy-image {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+.strategy-illustration {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .strategy-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    text-align: center;
+  }
+  .strategy-text p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ===== TESTIMONIALS ===== */
 .testimonial-section {
