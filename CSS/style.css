@@ -922,6 +922,13 @@ nav.links a.navlink:hover::after {
   min-height: 280px;
   position: relative;
   box-sizing: border-box;
+  transition: transform .25s ease, box-shadow .25s ease;
+  will-change: transform;
+}
+.t-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -1763,5 +1770,4 @@ nav.links a.navlink:hover::after {
     color: #ff9900;
   }
 }
-
 
