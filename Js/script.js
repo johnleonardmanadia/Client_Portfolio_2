@@ -193,7 +193,15 @@ const videos = {
     ugcAi: [
         "y2kLSAVdmMw",
         "oszqsVyNZX4",
-        ""
+        "z2Cz2-o-C2A",
+        "KhRJQciVmgI",
+        "8Dat3xF18WA",
+        "UZY62keLHg4",
+        "wTSJqshgYOU",
+        "rOlyYcvORxU",
+        "pItk5EGHxsw",
+        "BstGH-gTPdg",
+        "pktvvjMV2q0"
 
     ],
     shortForm: [
