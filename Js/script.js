@@ -191,7 +191,9 @@ const menuToggle = document.getElementById('menuToggle');
 // Kunin mo lang yung VIDEO_ID (yung parte pagkatapos ng /embed/) at ilagay dito sa baba.
 const videos = {
     ugcAi: [
-        "",
+        "y2kLSAVdmMw",
+        "oszqsVyNZX4",
+        ""
 
     ],
     shortForm: [
