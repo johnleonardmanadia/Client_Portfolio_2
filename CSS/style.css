@@ -1,3 +1,4 @@
+
 :root {
   --blue: #3e9cf5;
   --blue-dark: #2c7fd6;
@@ -274,7 +275,8 @@ nav.links a.navlink:hover::after {
   overflow: hidden;
   pointer-events: none;
 }
-.yt-bg-frame {
+.yt-bg-frame,
+#ytBgPlayer {
   position: absolute;
   top: 50%;
   left: 50%;

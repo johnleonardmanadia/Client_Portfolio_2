@@ -1,3 +1,44 @@
+
+// ===== HERO BACKGROUND VIDEO (YouTube IFrame API) =====
+// Palitan mo lang ang HERO_VIDEO_ID kung may ibang video ka.
+const HERO_VIDEO_ID = 'n3Hraz0DgIA';
+let ytBgPlayer;
+
+function onYouTubeIframeAPIReady() {
+  ytBgPlayer = new YT.Player('ytBgPlayer', {
+    videoId: HERO_VIDEO_ID,
+    playerVars: {
+      autoplay: 1,
+      mute: 1,
+      controls: 0,
+      showinfo: 0,
+      rel: 0,
+      modestbranding: 1,
+      iv_load_policy: 3,
+      playsinline: 1,
+      disablekb: 1,
+      fs: 0
+    },
+    events: {
+      onReady: (e) => {
+        e.target.mute();
+        e.target.playVideo();
+        // Tag the API-generated iframe so existing CSS sizing/pointer-events still apply
+        const frame = e.target.getIframe();
+        if (frame) frame.classList.add('yt-bg-frame');
+      },
+      onStateChange: (e) => {
+        // Loop manually (seek back + replay) instead of the playlist-loop trick,
+        // which is what caused the play/pause icon to flash on every restart.
+        if (e.data === YT.PlayerState.ENDED) {
+          e.target.seekTo(0);
+          e.target.playVideo();
+        }
+      }
+    }
+  });
+}
+
 const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   const navOverlay = document.getElementById('navOverlay');
@@ -220,6 +261,7 @@ const videos = {
         "yDylGKCnu84",
         "6i_xGgPaRSM",
         "1TrQQXeRcX8"
+        
     ]
 };
 

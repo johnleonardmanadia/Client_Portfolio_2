@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,11 +46,7 @@
 <section class="hero" id="home">
   <!-- YouTube background video: palitan mo lang ang ID sa loob ng src kung may ibang video ka -->
   <div class="video-fallback yt-bg-wrap">
-    <iframe class="yt-bg-frame"
-      src="https://www.youtube.com/embed/at_bgaQaGjw?autoplay=1&mute=1&loop=1&playlist=at_bgaQaGjw&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1"
-      title="Hero background video" frameborder="0"
-      allow="autoplay; encrypted-media; picture-in-picture"
-      allowfullscreen></iframe>
+    <div id="ytBgPlayer"></div>
   </div>
   <div class="hero-content">
     <h1><span id="typedHeadline"></span></h1>
@@ -472,7 +471,7 @@
       <div class="form-column">
         <h3 class="form-title">Send Me a Message</h3>
         <p class="form-subtitle">Fill out the form below and I'll get back to you shortly.</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://formspree.io/f/xnpqopey" method="POST">
           
           <div class="form-group">
             <label for="name">Your Name *</label>
@@ -553,6 +552,7 @@
   </div>
 </footer>
 </body>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="Js/script.js">
 
 </script>
