@@ -357,17 +357,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ===== STRATEGY PHOTO STACK =====
-// Click sends the front photo to the back, revealing the next one.
-const photoStack = document.getElementById('photoStack');
-if (photoStack) {
-    photoStack.addEventListener('click', () => {
-        const firstPhoto = photoStack.querySelector('img');
-        if (firstPhoto) {
-            photoStack.appendChild(firstPhoto);
-        }
-    });
-}
+// ===== STRATEGY VIDEO =====
+// Single "How We Work" video — no stack/cycle behavior needed anymore.
 
 
 // ===== SCROLL REVEAL =====
@@ -385,5 +376,3 @@ if (revealEls.length) {
 
     revealEls.forEach(el => revealObserver.observe(el));
 }
-
-
