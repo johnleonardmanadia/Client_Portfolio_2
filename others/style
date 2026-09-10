@@ -2,6 +2,7 @@
 
 
 
+
 :root {
   --blue: #3e9cf5;
   --blue-dark: #2c7fd6;
@@ -1478,8 +1479,8 @@ nav.links a.navlink:hover::after {
     border-radius: 18px;
     overflow: hidden;
     background: #111;
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
 }
 
 .video-wrapper {
@@ -1524,7 +1525,6 @@ nav.links a.navlink:hover::after {
     width: 270px;
     height: 480px;
     z-index: 10;
-    border-color: var(--accent-blue-light);
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.8),
         0 0 35px rgba(62, 156, 245, 0.35);
@@ -1538,21 +1538,6 @@ nav.links a.navlink:hover::after {
 .side-card:hover {
     transform: scale(0.92);
     opacity: 0.6;
-    border-color: rgba(255, 255, 255, 0.35);
-}
-
-/* FAR SIDE VIDEOS (5-card view) */
-.far-side-card {
-    width: 120px;
-    height: 220px;
-    opacity: 0.18;
-    transform: scale(0.75);
-    cursor: pointer;
-}
-.far-side-card:hover {
-    opacity: 0.4;
-    transform: scale(0.8);
-    border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* LONG FORM VIDEO = 16:9 landscape instead of 9:16 portrait */
@@ -1564,11 +1549,6 @@ nav.links a.navlink:hover::after {
 .carousel-container.landscape .side-card {
     width: 320px;
     height: 180px;
-}
-
-.carousel-container.landscape .far-side-card {
-    width: 200px;
-    height: 112px;
 }
 
 
@@ -1674,8 +1654,7 @@ nav.links a.navlink:hover::after {
         font-size: 0.8rem;
     }
 
-    .side-card,
-    .far-side-card {
+    .side-card {
         display: none;
     }
 

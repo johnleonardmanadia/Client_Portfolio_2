@@ -276,10 +276,6 @@ const nextThumb = document.getElementById('nextThumb');
 
 const prevCard = document.getElementById('prevCard');
 const nextCard = document.getElementById('nextCard');
-const farPrevCard = document.getElementById('farPrevCard');
-const farNextCard = document.getElementById('farNextCard');
-const farPrevThumb = document.getElementById('farPrevThumb');
-const farNextThumb = document.getElementById('farNextThumb');
 
 const carouselPrevBtn = document.getElementById('prevBtn');
 const carouselNextBtn = document.getElementById('nextBtn');
@@ -330,8 +326,6 @@ function updateVideoSources() {
 
     const prevIndex = (currentIndex - 1 + total) % total;
     const nextIndex = (currentIndex + 1) % total;
-    const farPrevIndex = (currentIndex - 2 + total) % total;
-    const farNextIndex = (currentIndex + 2) % total;
 
     // Long form video = 16:9 landscape cards; others stay 9:16 portrait
     document.getElementById('carouselContainer').classList.toggle('landscape', currentCategory === 'longForm');
@@ -342,17 +336,6 @@ function updateVideoSources() {
     // Set Previews (thumbnail images lang, hindi kailangan mag-play)
     prevThumb.src = ytThumb(list[prevIndex]);
     nextThumb.src = ytThumb(list[nextIndex]);
-
-    // Only show far previews when there are enough videos to avoid repeats
-    if (total > 4) {
-        farPrevCard.style.display = '';
-        farNextCard.style.display = '';
-        farPrevThumb.src = ytThumb(list[farPrevIndex]);
-        farNextThumb.src = ytThumb(list[farNextIndex]);
-    } else {
-        farPrevCard.style.display = 'none';
-        farNextCard.style.display = 'none';
-    }
 
     renderPagination();
 }
@@ -398,9 +381,6 @@ carouselPrevBtn.onclick = goPrev;
 
 nextCard.onclick = goNext;
 prevCard.onclick = goPrev;
-
-farNextCard.onclick = () => { currentIndex += 2; updateVideoSources(); };
-farPrevCard.onclick = () => { currentIndex -= 2; updateVideoSources(); };
 
 categoryButtons.forEach(btn => {
     btn.onclick = (e) => {

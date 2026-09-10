@@ -1,5 +1,12 @@
 
 
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,15 +112,7 @@
                     <button class="nav-btn next-btn" id="nextBtn">›</button>
 
                     <div class="carousel-stage">
-
-                        <!-- Far Left Preview -->
-                        <div class="video-card far-side-card" id="farPrevCard">
-                            <div class="video-wrapper">
-                                <img id="farPrevThumb" class="video-thumb" src="" alt="" loading="lazy">
-                                <div class="card-overlay"></div>
-                            </div>
-                        </div>
-
+                        
                         <!-- Left Preview -->
                         <div class="video-card side-card" id="prevCard">
                             <div class="video-wrapper">
@@ -136,14 +135,6 @@
                         <div class="video-card side-card" id="nextCard">
                             <div class="video-wrapper">
                                 <img id="nextThumb" class="video-thumb" src="" alt="" loading="lazy">
-                                <div class="card-overlay"></div>
-                            </div>
-                        </div>
-
-                        <!-- Far Right Preview -->
-                        <div class="video-card far-side-card" id="farNextCard">
-                            <div class="video-wrapper">
-                                <img id="farNextThumb" class="video-thumb" src="" alt="" loading="lazy">
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
